@@ -20,7 +20,7 @@
                     },
                     colors: {
                         brand: {
-                            accent: '#ff3333', // Un rojo vibrante para los botones/detalles (muy cinematográfico)
+                            accent: '#ff3333',
                         }
                     },
                     boxShadow: {
@@ -32,7 +32,6 @@
         }
     </script>
     <style>
-        /* Animaciones para el estilo brutalista */
         .brutal-card {
             transition: all 0.2s ease-in-out;
         }
@@ -40,8 +39,6 @@
             transform: translate(4px, 4px);
             box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
         }
-        
-        /* Ocultar barra de scroll */
         ::-webkit-scrollbar { width: 10px; }
         ::-webkit-scrollbar-track { background: #f3f4f6; border-left: 2px solid black; }
         ::-webkit-scrollbar-thumb { background: #000; }
@@ -53,9 +50,9 @@
     <nav class="fixed w-full z-50 top-0 bg-white border-b-4 border-black transition-all">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20 md:h-24">
-                <!-- Logo Horizontal -->
+                <!-- Logo Horizontal (Actualizado a .png.png) -->
                 <div class="flex-shrink-0 cursor-pointer" onclick="window.scrollTo(0,0)">
-                    <img src="./assets/logo-horizontal.png" alt="Media Club" class="h-10 md:h-14 w-auto object-contain" onerror="this.outerHTML='<h1 class=\'font-black text-3xl tracking-tighter uppercase\'>MEDIA CLUB</h1>'">
+                    <img src="./assets/logo-horizontal.png.png" alt="Media Club" class="h-10 md:h-14 w-auto object-contain" onerror="this.outerHTML='<h1 class=\'font-black text-3xl tracking-tighter uppercase\'>MEDIA CLUB</h1>'">
                 </div>
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="#portfolio" class="text-black font-bold uppercase tracking-wide hover:text-brand-accent transition-colors">Trabajos</a>
@@ -100,15 +97,13 @@
                 <div class="h-2 flex-grow bg-black mt-2"></div>
             </div>
 
-            <!-- Grilla de Trabajos (Masonry Layout para soportar Vertical/Horizontal) -->
+            <!-- Grilla de Trabajos (Masonry Layout) -->
             <div class="columns-1 sm:columns-2 lg:columns-3 gap-8 space-y-8">
                 
-                <!-- Video 1 -->
+                <!-- Video 1 (Actualizado a .jpg.jpeg) -->
                 <a href="#" onclick="openVideoModal('1185561456'); return false;" class="group block break-inside-avoid">
                     <div class="border-4 border-black bg-black relative overflow-hidden shadow-brutal brutal-card mb-4">
-                        <!-- Removido el aspect-video, la imagen dicta la altura -->
-                        <img src="./assets/portada1.jpg" alt="Proyecto 1" class="object-cover w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity">
-                        <!-- Botón Play Central -->
+                        <img src="./assets/portada1.jpg.jpeg" alt="Proyecto 1" class="object-cover w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity">
                         <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-transparent transition-colors">
                             <div class="w-16 h-16 bg-brand-accent border-4 border-black flex items-center justify-center text-white transform group-hover:scale-110 transition-transform shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                                 <i data-lucide="play" class="w-8 h-8 ml-1 fill-white"></i>
@@ -124,7 +119,7 @@
                 <!-- Video 2 -->
                 <a href="#" onclick="openVideoModal('1185559895'); return false;" class="group block break-inside-avoid">
                     <div class="border-4 border-black bg-black relative overflow-hidden shadow-brutal brutal-card mb-4">
-                        <img src="./assets/portada2.jpg" alt="Proyecto 2" class="object-cover w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity">
+                        <img src="./assets/portada2.jpg.jpeg" alt="Proyecto 2" class="object-cover w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity">
                         <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-transparent transition-colors">
                             <div class="w-16 h-16 bg-brand-accent border-4 border-black flex items-center justify-center text-white transform group-hover:scale-110 transition-transform shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                                 <i data-lucide="play" class="w-8 h-8 ml-1 fill-white"></i>
@@ -140,7 +135,7 @@
                 <!-- Video 3 -->
                 <a href="#" onclick="openVideoModal('1185596823'); return false;" class="group block break-inside-avoid">
                     <div class="border-4 border-black bg-black relative overflow-hidden shadow-brutal brutal-card mb-4">
-                        <img src="./assets/portada3.jpg" alt="Proyecto 3" class="object-cover w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity">
+                        <img src="./assets/portada3.jpg.jpeg" alt="Proyecto 3" class="object-cover w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity">
                         <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-transparent transition-colors">
                             <div class="w-16 h-16 bg-brand-accent border-4 border-black flex items-center justify-center text-white transform group-hover:scale-110 transition-transform shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                                 <i data-lucide="play" class="w-8 h-8 ml-1 fill-white"></i>
@@ -156,7 +151,7 @@
                 <!-- Video 4 -->
                 <a href="#" onclick="openVideoModal('1185565806'); return false;" class="group block break-inside-avoid">
                     <div class="border-4 border-black bg-black relative overflow-hidden shadow-brutal brutal-card mb-4">
-                        <img src="./assets/portada4.jpg" alt="Proyecto 4" class="object-cover w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity">
+                        <img src="./assets/portada4.jpg.jpeg" alt="Proyecto 4" class="object-cover w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity">
                         <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-transparent transition-colors">
                             <div class="w-16 h-16 bg-brand-accent border-4 border-black flex items-center justify-center text-white transform group-hover:scale-110 transition-transform shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                                 <i data-lucide="play" class="w-8 h-8 ml-1 fill-white"></i>
@@ -172,7 +167,7 @@
                 <!-- Video 5 -->
                 <a href="#" onclick="openVideoModal('1185598264'); return false;" class="group block break-inside-avoid">
                     <div class="border-4 border-black bg-black relative overflow-hidden shadow-brutal brutal-card mb-4">
-                        <img src="./assets/portada5.jpg" alt="Proyecto 5" class="object-cover w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity">
+                        <img src="./assets/portada5.jpg.jpeg" alt="Proyecto 5" class="object-cover w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity">
                         <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-transparent transition-colors">
                             <div class="w-16 h-16 bg-brand-accent border-4 border-black flex items-center justify-center text-white transform group-hover:scale-110 transition-transform shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                                 <i data-lucide="play" class="w-8 h-8 ml-1 fill-white"></i>
@@ -188,7 +183,7 @@
                 <!-- Video 6 -->
                 <a href="#" onclick="openVideoModal('1185597790'); return false;" class="group block break-inside-avoid">
                     <div class="border-4 border-black bg-black relative overflow-hidden shadow-brutal brutal-card mb-4">
-                        <img src="./assets/portada6.jpg" alt="Proyecto 6" class="object-cover w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity">
+                        <img src="./assets/portada6.jpg.jpeg" alt="Proyecto 6" class="object-cover w-full h-auto opacity-90 group-hover:opacity-100 transition-opacity">
                         <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-transparent transition-colors">
                             <div class="w-16 h-16 bg-brand-accent border-4 border-black flex items-center justify-center text-white transform group-hover:scale-110 transition-transform shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
                                 <i data-lucide="play" class="w-8 h-8 ml-1 fill-white"></i>
@@ -214,7 +209,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Servicio 1 -->
                 <div class="bg-white border-4 border-black p-8 shadow-brutal brutal-card">
                     <div class="w-14 h-14 bg-black flex items-center justify-center text-white mb-6">
                         <i data-lucide="clapperboard" class="w-8 h-8"></i>
@@ -223,7 +217,6 @@
                     <p class="text-gray-800 font-medium">Campañas publicitarias, videoclips y branding. Llevamos la identidad de tu empresa al siguiente nivel con calidad cinematográfica.</p>
                 </div>
 
-                <!-- Servicio 2 -->
                 <div class="bg-white border-4 border-black p-8 shadow-brutal brutal-card">
                     <div class="w-14 h-14 bg-black flex items-center justify-center text-white mb-6">
                         <i data-lucide="building-2" class="w-8 h-8"></i>
@@ -232,7 +225,6 @@
                     <p class="text-gray-800 font-medium">Construimos tu propio medio. Diseño de estudios, acústica, equipamiento de streaming y capacitación de equipos técnicos.</p>
                 </div>
 
-                <!-- Servicio 3 -->
                 <div class="bg-white border-4 border-black p-8 shadow-brutal brutal-card">
                     <div class="w-14 h-14 bg-black flex items-center justify-center text-white mb-6">
                         <i data-lucide="tent" class="w-8 h-8"></i>
@@ -264,7 +256,6 @@
                     </div>
                 </div>
                 
-                <!-- Formulario Brutalista -->
                 <div class="bg-white p-8 border-4 border-black shadow-brutal">
                     <form onsubmit="event.preventDefault(); alert('¡Mensaje enviado!');" class="space-y-6">
                         <div>
@@ -287,9 +278,9 @@
             </div>
             
             <div class="border-t-4 border-black pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
-                <!-- Logo Apilado (Sello) -->
+                <!-- Logo Apilado (Actualizado a .png.png) -->
                 <div class="flex flex-col items-center md:items-start gap-2">
-                    <img src="./assets/logo-stacked.png" alt="Media Club Logo" class="h-16 w-auto opacity-90" onerror="this.outerHTML='<h2 class=\'font-black text-2xl uppercase\'>M.C.</h2>'">
+                    <img src="./assets/logo-stacked.png.png" alt="Media Club Logo" class="h-16 w-auto opacity-90" onerror="this.outerHTML='<h2 class=\'font-black text-2xl uppercase\'>M.C.</h2>'">
                     <span class="font-bold text-sm text-gray-500 uppercase tracking-widest">&copy; 2026 Media Club.</span>
                 </div>
                 <div class="flex gap-6 font-bold uppercase text-sm">
@@ -303,56 +294,40 @@
     <!-- Modal de Video Flotante -->
     <div id="videoModal" class="fixed inset-0 z-[100] bg-black/95 hidden flex-col items-center justify-center p-4 md:p-12 backdrop-blur-sm opacity-0 transition-opacity duration-300">
         <div class="w-full max-w-6xl relative">
-            <!-- Botón Cerrar -->
             <button onclick="closeVideoModal()" class="absolute -top-12 right-0 text-white hover:text-brand-accent flex items-center gap-2 font-bold uppercase tracking-widest transition-colors">
                 Cerrar <i data-lucide="x" class="w-6 h-6"></i>
             </button>
-            <!-- Contenedor del reproductor (estética Brutalista) -->
             <div class="border-4 border-white shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] bg-black aspect-video w-full relative">
                 <iframe id="vimeoPlayer" src="" class="absolute inset-0 w-full h-full" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
 
-    <!-- Inicializar iconos -->
+    <!-- Inicializar iconos y lógica -->
     <script>
         lucide.createIcons();
 
-        // --- Lógica del Reproductor Flotante ---
         const modal = document.getElementById('videoModal');
         const player = document.getElementById('vimeoPlayer');
 
-        // Función para abrir el video
         function openVideoModal(videoId) {
-            // Inserta el ID del video y fuerza la reproducción automática (autoplay)
             player.src = `https://player.vimeo.com/video/${videoId}?autoplay=1&color=ff3333&title=0&byline=0&portrait=0`;
-            
             modal.classList.remove('hidden');
             modal.classList.add('flex');
-            
-            // Un pequeño retraso para la animación de fundido
             setTimeout(() => modal.classList.remove('opacity-0'), 10);
-            
-            // Bloquea el scroll de la página de fondo
             document.body.style.overflow = 'hidden'; 
         }
 
-        // Función para cerrar el video
         function closeVideoModal() {
             modal.classList.add('opacity-0');
             setTimeout(() => {
                 modal.classList.add('hidden');
                 modal.classList.remove('flex');
-                
-                // Vacía el reproductor para que el audio deje de sonar
                 player.src = ''; 
-                
-                // Devuelve el scroll a la página
                 document.body.style.overflow = 'auto'; 
             }, 300);
         }
 
-        // Si hacen clic en cualquier parte oscura fuera del video, se cierra solo
         modal.addEventListener('click', function(e) {
             if (e.target === modal) {
                 closeVideoModal();
