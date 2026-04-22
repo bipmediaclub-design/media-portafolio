@@ -245,30 +245,36 @@
                     <p class="text-xl font-bold text-gray-600 mb-8">Cuéntanos sobre tu proyecto.</p>
                     
                     <div class="space-y-6">
-                        <div class="flex items-center gap-4 text-black font-bold text-lg hover:text-brand-accent transition-colors">
-                            <div class="border-2 border-black p-2 bg-gray-50"><i data-lucide="mail" class="w-6 h-6"></i></div>
-                            <a href="mailto:hola@mediaclub.com">hola@mediaclub.com</a>
-                        </div>
-                        <div class="flex items-center gap-4 text-black font-bold text-lg hover:text-brand-accent transition-colors">
-                            <div class="border-2 border-black p-2 bg-gray-50"><i data-lucide="instagram" class="w-6 h-6"></i></div>
-                            <a href="#">@media.club</a>
-                        </div>
+                        <a href="mailto:bipmediaclub@gmail.com" class="group flex items-center gap-4 text-black font-bold text-lg hover:text-brand-accent transition-colors">
+                            <div class="border-4 border-black p-2 bg-white shadow-brutal group-hover:shadow-brutal-hover group-hover:translate-x-[4px] group-hover:translate-y-[4px] transition-all">
+                                <i data-lucide="mail" class="w-6 h-6"></i>
+                            </div>
+                            <span>bipmediaclub@gmail.com</span>
+                        </a>
+                        <a href="https://instagram.com/mediaclub.oficial" target="_blank" class="group flex items-center gap-4 text-black font-bold text-lg hover:text-brand-accent transition-colors">
+                            <div class="border-4 border-black p-2 bg-white shadow-brutal group-hover:shadow-brutal-hover group-hover:translate-x-[4px] group-hover:translate-y-[4px] transition-all">
+                                <i data-lucide="instagram" class="w-6 h-6"></i>
+                            </div>
+                            <span>@mediaclub.oficial</span>
+                        </a>
                     </div>
                 </div>
                 
                 <div class="bg-white p-8 border-4 border-black shadow-brutal">
-                    <form onsubmit="event.preventDefault(); alert('¡Mensaje enviado!');" class="space-y-6">
+                    <!-- Formulario Activado para Netlify -->
+                    <form name="contacto" method="POST" data-netlify="true" class="space-y-6">
+                        <input type="hidden" name="form-name" value="contacto" />
                         <div>
                             <label class="block font-bold uppercase text-sm mb-2">Nombre / Marca</label>
-                            <input type="text" class="w-full bg-gray-50 border-4 border-black px-4 py-3 font-medium focus:outline-none focus:bg-white transition-colors" placeholder="Tu nombre">
+                            <input type="text" name="nombre" required class="w-full bg-gray-50 border-4 border-black px-4 py-3 font-medium focus:outline-none focus:bg-white transition-colors" placeholder="Tu nombre">
                         </div>
                         <div>
                             <label class="block font-bold uppercase text-sm mb-2">Email</label>
-                            <input type="email" class="w-full bg-gray-50 border-4 border-black px-4 py-3 font-medium focus:outline-none focus:bg-white transition-colors" placeholder="correo@ejemplo.com">
+                            <input type="email" name="email" required class="w-full bg-gray-50 border-4 border-black px-4 py-3 font-medium focus:outline-none focus:bg-white transition-colors" placeholder="correo@ejemplo.com">
                         </div>
                         <div>
                             <label class="block font-bold uppercase text-sm mb-2">Proyecto</label>
-                            <textarea rows="3" class="w-full bg-gray-50 border-4 border-black px-4 py-3 font-medium focus:outline-none focus:bg-white transition-colors" placeholder="Breve descripción..."></textarea>
+                            <textarea name="mensaje" rows="3" required class="w-full bg-gray-50 border-4 border-black px-4 py-3 font-medium focus:outline-none focus:bg-white transition-colors" placeholder="Breve descripción..."></textarea>
                         </div>
                         <button type="submit" class="w-full bg-black text-white font-black uppercase tracking-widest py-4 border-4 border-black hover:bg-brand-accent hover:text-white transition-colors shadow-brutal brutal-card">
                             Enviar Mensaje
